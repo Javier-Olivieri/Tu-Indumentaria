@@ -5,6 +5,8 @@ $(() => {
     sProductos();
 });
 
+
+//Dom
 let contenedorProd = document.querySelector("#contenedorProductos");
 let contenedorCarrito = document.querySelector("#contenedorCarrito");
 
@@ -151,21 +153,17 @@ $(() => {
             icon: "warning",
             buttons: true,
             dangerMode: false,
-          })
-          .then((willDelete) => {
-            if (willDelete) {
-              swal("Muchas Gracias, Compra Confirmada", {
-                icon: "success",
-              });
-            }
-          });
-      
-      
-          
-        
+        })
+            .then((willDelete) => {
+                if (willDelete) {
+                    swal("Muchas Gracias, Compra Confirmada", {
+                        icon: "success",
+                    });
+                }
+            });
 
     });
-    
+
 
     //Animación título de Página
     $(".tu").css("color", "black")
