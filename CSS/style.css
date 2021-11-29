@@ -207,10 +207,11 @@ p a {
         background-image: linear-gradient(to left, green, orangered, lightblue);
       }
 
-       .table {
-        margin-left: -120px;
+       .table  {
+        margin-left: -110px;
         
        }
+
        
         #contenedorProductos {
              margin-left: -80px;
