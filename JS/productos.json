@@ -5,7 +5,7 @@
         "talle": "XL",
         "precio": 4500.50,
         "cantidad": "1",
-        "img": "../Multimedia/jeans.jpg"
+        "img": "../Multimedia/Jeans.jpg"
     },
 
     {
@@ -54,7 +54,7 @@
         "talle": "M",
         "precio": 6590.00,
         "cantidad": "1",
-        "img": "../Multimedia/falda.jpg"
+        "img": "../Multimedia/Falda.jpg"
     },
     {
         "id":"8",

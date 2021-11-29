@@ -227,10 +227,12 @@ p a {
             position: sticky;
             top: 10px;
             display: flex;
-            margin-left: -30px;
+          font-size: 15px;
+        justify-content: center;
             width: 100%;
             
         }
+
         
 
      
