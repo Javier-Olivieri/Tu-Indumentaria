@@ -1,0 +1,68 @@
+[
+    {
+        "id":"1",
+        "nombre": "Jean",
+        "talle": "XL",
+        "precio": 4500.50,
+        "cantidad": "1",
+        "img": "../Multimedia/jeans.jpg"
+    },
+
+    {
+        "id":"2",
+        "nombre": "Vestido",
+        "talle": "M",
+        "precio": 3690.90,
+        "cantidad": "1",
+        "img": "../Multimedia/Vestido.jpg"
+    },
+    {
+        "id":"3",
+        "nombre": "Camisa",
+        "talle": "L",
+        "precio": 4990.00,
+        "cantidad": "1",
+        "img": "../Multimedia/camisa.jpg"
+    },
+    {
+        "id":"4",
+        "nombre": "Jersey",
+        "talle": "S",
+        "precio": 3830.45,
+        "cantidad": "1",
+        "img": "../Multimedia/Jersey.jpg"
+    },
+    {
+        "id":"5",
+        "nombre": "Remera",
+        "talle": "XXL",
+        "precio": 6845.50,
+        "cantidad": "1",
+        "img": "../Multimedia/Remera.jpg"
+    },
+    {
+        "id":"6",
+        "nombre": "Chaqueta",
+        "talle": "XS",
+        "precio": 15350.00,
+        "cantidad": "1",
+        "img": "../Multimedia/Chaqueta.jpg"
+    },
+    {
+        "id":"7",
+        "nombre": "Falda",
+        "talle": "M",
+        "precio": 6590.00,
+        "cantidad": "1",
+        "img": "../Multimedia/falda.jpg"
+    },
+    {
+        "id":"8",
+        "nombre": "Abrigo",
+        "talle": "S",
+        "precio": 31990.00,
+        "cantidad": "1",
+        "img": "../Multimedia/abrigo.jpg"
+    }
+]
+
