@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("#Enviar").dblclick(function (e) {
+    $("#Enviar").click(function (e) {
         e.preventDefault();
         const nombre = $("#nombre").val();
         const email = $("#Email").val();
@@ -36,7 +36,7 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
-    $("#Enviar").dblclick(function () {
+    $("#Enviar").click(function () {
         $("#gracias").toggle();
 
     });

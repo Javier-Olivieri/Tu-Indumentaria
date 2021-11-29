@@ -207,9 +207,9 @@ p a {
         background-image: linear-gradient(to left, green, orangered, lightblue);
       }
 
-       .table {
-          margin-left: -100px;
-        }
+       .table{
+        margin-left: -100px;
+       } 
 
         #contenedorProductos {
              margin-left: -80px;
@@ -218,6 +218,8 @@ p a {
         .botons {
             position: sticky;
             top: 10px;
+            display: flex;
+            width: 100%;
         }
         
      
