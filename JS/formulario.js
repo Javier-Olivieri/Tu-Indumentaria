@@ -64,7 +64,7 @@ $("#Enviar").css("margin-left", "70px")
 $(".containerCont").css("background-color", "lightblue")
 
 //Animaciones
-$("#Enviar").dblclick(() => {
+$("#Enviar").click(() => {
     $("#formulario").toggle("slow");
 });
 
