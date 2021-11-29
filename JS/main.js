@@ -9,7 +9,7 @@ let contenedorProd = document.querySelector("#contenedorProductos");
 let contenedorCarrito = document.querySelector("#contenedorCarrito");
 
 
-
+//Muestra Productos (Imágenes)
 function mostrarProd(array) {
     contenedorProd.innerHTML = "";
     for (e of array) {
@@ -26,7 +26,7 @@ function mostrarProd(array) {
     }
 }
 
-
+//Muestra Productos en Tabla 
 
 function mostrarCarrito(array) {
     let i = 1;
@@ -51,6 +51,8 @@ function mostrarCarrito(array) {
     </tr>`
 }
 
+//Agregar Storage
+
 function aStorage(x) {
     let archivos = localStorage.getItem("carrito") ? JSON.parse(localStorage.getItem("carrito")) : [];
     archivos.push(x);
@@ -59,10 +61,12 @@ function aStorage(x) {
 
 }
 
-
+//Guardar Storage
 function gStorage(array) {
     localStorage.setItem("carrito", JSON.stringify(array));
 }
+
+//Capturar Id
 
 function capturar(id) {
     let carrito = localStorage.getItem("carrito") ? JSON.parse(localStorage.getItem("carrito")) : [];
@@ -80,7 +84,7 @@ function capturar(id) {
 }
 
 
-
+//Quitar Producto
 function quitar(id) {
     let carrito = JSON.parse(localStorage.getItem("carrito"));
     let carritoFinal = carrito.filter(e => e.id != id);
@@ -88,6 +92,8 @@ function quitar(id) {
     mostrarCarrito(JSON.parse(localStorage.getItem("carrito")));
     sProductos();
 }
+
+//Sumar Importe Productos 
 
 function sProductos() {
     let suma = 0;
@@ -101,7 +107,7 @@ function sProductos() {
 }
 
 
-//Ajax
+//Ajax  //Importo Productos desde archivo .Json
 $.getJSON("../JS/productos.json", function (estado, respuesta) {
     if (respuesta == "success") {
         Indumentaria = estado;
@@ -145,18 +151,20 @@ $(() => {
             icon: "warning",
             buttons: true,
             dangerbuttons: true,
-          })
-          .then((willDelete) => {
-            if (willDelete) {
-              swal("Muchas Gracias, Compra Confirmada!", {
-                icon: "success",
-              });
-            }
-            
-        }); 
+        })
+            .then((willDelete) => {
+                if (willDelete) {
+                    swal("Muchas Gracias, Compra Confirmada!", {
+                        icon: "success",
+                    });
+                }
+
+            });
 
     });
 
+
+    //Animación título de Página
     $(".tu").css("color", "black")
         .slideUp(3000)
         .slideDown(3000);

@@ -1,3 +1,4 @@
+//Formulario Validación
 $(document).ready(function () {
     $("#Enviar").click(function (e) {
         e.preventDefault();
@@ -21,7 +22,7 @@ $(document).ready(function () {
 
 });
 
-
+//Mensaje al final de la página
 $(document).ready(function () {
     $("#btn4").dblclick(function () {
         $(".parag").append("<b>Esperamos Nuevamente, Recomendanos</b>.");
@@ -34,7 +35,7 @@ $(document).ready(function () {
     });
 });
 
-
+//Mensaje agradeciendo envio de formulario
 $(document).ready(function () {
     $("#Enviar").click(function () {
         $("#gracias").toggle();
@@ -63,7 +64,7 @@ $("#Enviar").css("margin-left", "70px")
 
 $(".containerCont").css("background-color", "lightblue")
 
-//Animaciones
+//Animaciones al enviar formulario
 $("#Enviar").click(() => {
     $("#formulario").toggle("slow");
 });
