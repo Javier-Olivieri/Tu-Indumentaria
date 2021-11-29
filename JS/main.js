@@ -146,14 +146,26 @@ $(() => {
     $("#Finalizar").on("click", function () {
         localStorage.clear()
         swal({
-            title: "Compra Confirmada !",
+            title: "Quieres confirmar la compra?",
             text: "Tu Indumentaria",
-            icon: "success",
-            button: "Salir/Seguir Comprando",
+            icon: "warning",
+            buttons: true,
+            dangerMode: false,
+          })
+          .then((willDelete) => {
+            if (willDelete) {
+              swal("Muchas Gracias, Compra Confirmada", {
+                icon: "success",
+              });
+            }
           });
-  
-    });
+      
+      
+          
+        
 
+    });
+    
 
     //Animación título de Página
     $(".tu").css("color", "black")
@@ -161,6 +173,7 @@ $(() => {
         .slideDown(3000);
 
 });
+
 
 
 
