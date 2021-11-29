@@ -146,21 +146,12 @@ $(() => {
     $("#Finalizar").on("click", function () {
         localStorage.clear()
         swal({
-            title: "Quieres confirmar la compra?",
-            text: "TU Indumentaria",
-            icon: "warning",
-            buttons: true,
-            dangerbuttons: true,
-        })
-            .then((willDelete) => {
-                if (willDelete) {
-                    swal("Muchas Gracias, Compra Confirmada!", {
-                        icon: "success",
-                    });
-                }
-
-            });
-
+            title: "Compra Confirmada !",
+            text: "Tu Indumentaria",
+            icon: "success",
+            button: "Salir/Seguir Comprando",
+          });
+  
     });
 
 
